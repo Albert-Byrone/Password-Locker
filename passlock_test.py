@@ -1,8 +1,10 @@
-    def setUp(self):
+    def test_init(self):
         """
-        a method that runs before the test
+        test case to check if the object in initialized correctly
         """
-        self.new_user = User("AlbertByrone","qwertykey")
+        self.assertEqual(self.new_user.username,'AlbertByrone')
+        self.assertEqual(self.new_user.password,'qwertykey')
+        
 
 # class UserTest(unittest.TestCase):
 #     def setUp(self):
