@@ -1,5 +1,5 @@
-# import unittest
-# from passlock import User
+import unittest
+from passlock import User,Credentials
 
 # class UserTest(unittest.TestCase):
 #     def setUp(self):
