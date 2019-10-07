@@ -8,8 +8,7 @@ def function():
     print("     |  ___/  / _  | / __  / __      |  |        | |  | |  / /      |  |/  /          ")
     print("     |  |    / (_| | \__ \ \__ \     |  |_____   | |__| |  \ \____  |  |\  \          ")
     print("     |__|    \_____|  ___/  ___/     |_______ |   \____/    \_____| |__| \__\         ")  
-    print("                                                                                      ")  
-    print("                                                                                      ")           
+    print("                                                                                      ")          
 function()
  
 def create_new_user(username,password):
