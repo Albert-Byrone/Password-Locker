@@ -31,6 +31,10 @@ class User:
         delete_account method deletes a  saved account from the list
         '''
         User.user_list.remove(self)    
+class Credentials:
+    """
+    credential class to help create a new instance of credentials
+    """
     
     
 #     def __init__(self,username,password):
