@@ -17,6 +17,11 @@ class User:
         self.username = username
         self.password = password
         
+    def save_user(self):
+        '''
+        test case to check if the user is added to the user list
+        '''
+        User.user_list.append(self)
     
     
 #     def __init__(self,username,password):
