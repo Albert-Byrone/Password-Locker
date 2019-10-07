@@ -43,7 +43,7 @@ class Credentials:
             if(user.username == username and user.password == password):
                 a_user == user.username
         return a_user
-    
+        
     def __init__(self,account,userName,password):
         """
         test case that check if the credentials are initialized properlyy
@@ -51,13 +51,13 @@ class Credentials:
         self.account = account
         self.userName = userName
         self.password = password
-    
+        
     def save_credentials(self):
         """
         test case to add new credentials 
         """    
         Credentials.credentials_list.append(self)
-        
+    
     def delete_credentials(self):
         """
         delete_credentials method that deletes an account credentials from the credentials_list
@@ -68,9 +68,9 @@ class Credentials:
     def find_credential(cls,account):
         """
         Method that takes in a account_name and returns a credential that matches that account_name.
-        
+
         """
-    
+        
         for credential in cls.credentials_list:
             if credential.account == account:
                 return credential
@@ -88,11 +88,10 @@ class Credentials:
     def copy_password(cls,account):
         founded_credentials = Credentials.find_credential(account)
         pyperclip.copy(founded_credentials.password)
-        
+    
     def generate_password(self):
         """
         generate a random password consisting of numbers,letters and special characters
         """
         password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
         return ''.join(random.choice(password) for i in range(1,9))
-        
