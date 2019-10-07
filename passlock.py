@@ -1,3 +1,6 @@
+import pyperclip
+import random
+import string
     def __init__(self,username,password):
         """
         a method that defines the properties on the class object 
