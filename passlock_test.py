@@ -2,6 +2,12 @@ import unittest
 from passlock import User,Credentials
 import pyperclip
 class TestClass(unittest.TestCase):
+    def setUp(self):
+        """
+        a method that runs before the test
+        """
+        self.new_user = User("AlbertByrone","qwertykey")
+        
     def test_init(self):
         """
         test case to check if the object in initialized correctly
