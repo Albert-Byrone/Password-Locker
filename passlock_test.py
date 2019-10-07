@@ -104,5 +104,11 @@ class TestCredentials(unittest.TestCase):
         found_credential = Credentials.if_credential_exist("Twitter")
         self.assertTrue(found_credential)
         
-# def test_init(self):
+    def test_display_all_credentials(self):
+        '''
+        method that displays all the credentials that has been saved by the user
+        '''
+        
+        self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)
+        
     
