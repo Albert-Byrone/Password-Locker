@@ -43,6 +43,14 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credentials.userName,'AlbertByrone')
         self.assertEqual(self.new_credentials.password,'qwertykey') 
         
+    def test_save_credentials(self):
+        """
+        test case to test if the crential object is saved into the credentials list.
+
+        """
+        self.new_credentials.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
+        
 
 # class UserTest(unittest.TestCase):
 #     def setUp(self):
