@@ -93,6 +93,16 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(the_credential.account,test_credential.account)
 
     
+    def test_credential_exist(self):
+        """
+        test to check if we can return a true or false based on whether we find or can't find the credential.
+        """
+        self.new_credentials.save_credentials()
+        test_credential = Credentials("Twitter","atemba","Mfh45hfk")
+        test_credential.save_credentials()
+        
+        found_credential = Credentials.if_credential_exist("Twitter")
+        self.assertTrue(found_credential)
         
 # def test_init(self):
     
