@@ -32,7 +32,7 @@ The user would like to.... :
 
 * Open with any text editor
 
-####Run the application
+#### Run the application
 
 * Open terminal and type the following commands
 
