@@ -89,4 +89,10 @@ class Credentials:
         founded_credentials = Credentials.find_credential(account)
         pyperclip.copy(founded_credentials.password)
         
+    def generate_password(self):
+        """
+        generate a random password consisting of numbers,letters and special characters
+        """
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
+        return ''.join(random.choice(password) for i in range(1,9))
         
