@@ -35,6 +35,14 @@ class Credentials:
     """
     credential class to help create a new instance of credentials
     """
+    credentials_list = []
+    @classmethod
+    def verify_user(cls,username,password):
+        a_user = ""
+        for user in User.user_list:
+            if(user.username == username and user.password == password):
+                a_user == user.username
+        return a_user
     
     
 #     def __init__(self,username,password):
