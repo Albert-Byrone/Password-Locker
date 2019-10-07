@@ -22,6 +22,10 @@ class User:
         test case to check if the user is added to the user list
         '''
         User.user_list.append(self)
+    @classmethod   
+    def display_user(cls):
+        return cls.user_list
+    
     
     
 #     def __init__(self,username,password):
