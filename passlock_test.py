@@ -1,6 +1,7 @@
 import unittest
 from passlock import User,Credentials
 import pyperclip
+
 class TestClass(unittest.TestCase):
     def setUp(self):
         """
@@ -91,7 +92,7 @@ class TestCredentials(unittest.TestCase):
         
         the_credential = Credentials.find_credential("Twitter")
         self.assertEqual(the_credential.account,test_credential.account)
-
+        
     
     def test_credential_exist(self):
         """
@@ -113,4 +114,4 @@ class TestCredentials(unittest.TestCase):
         
 if __name__ == '__main__':
         unittest.main()
-    
+        
