@@ -1,3 +1,6 @@
+import unittest
+from passlock import User,Credentials
+import pyperclip
 class TestClass(unittest.TestCase):
     def test_init(self):
         """
