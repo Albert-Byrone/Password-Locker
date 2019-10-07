@@ -52,10 +52,11 @@ class Credentials:
         self.userName = userName
         self.password = password
     
-#     def __init__(self,username,password):
-#         """
-#         a method that defines the properties on the class object 
-#         """
+    def save_credentials(self):
+        """
+        test case to add new credentials 
+        """    
+        Credentials.credentials_list.append(self)
         
 #         self.username = username
 #         self.password = password
