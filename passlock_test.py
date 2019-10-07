@@ -23,6 +23,7 @@ class TestClass(unittest.TestCase):
         self.new_user.save_user()
         self.assertEqual(len(User.user_list),1)
         
+class TestCredentials(unittest.TestCase):
 
 # class UserTest(unittest.TestCase):
 #     def setUp(self):
