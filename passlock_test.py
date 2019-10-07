@@ -1,3 +1,4 @@
+class TestClass(unittest.TestCase):
     def test_init(self):
         """
         test case to check if the object in initialized correctly
